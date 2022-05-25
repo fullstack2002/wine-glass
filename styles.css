@@ -1,0 +1,44 @@
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.wine-glass {
+  background-image: url(./wine.png);
+  width: 50px;
+  height: 50px;
+  border: 3px solid #000000;
+  border-radius: 0 0 50% 50%;
+  animation: fill 3s infinite;
+  background-repeat: repeat-x;
+}
+@keyframes fill {
+  0% {
+    background-position: 0px 50px;
+  }
+  20% {
+    background-position: -5px 45px;
+  }
+  40% {
+    background-position: -50px 30px;
+  }
+  80% {
+    background-position: -100px 3px;
+  }
+  100% {
+    background-position: 0px 50px;
+  }
+}
+.glass-stem {
+  width: 5px;
+  height: 50px;
+  background: #000000;
+}
+.glass-base {
+  width: 35px;
+  height: 10px;
+  border-radius: 50%;
+  background: #000000;
+}
